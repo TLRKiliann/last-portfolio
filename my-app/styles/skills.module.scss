@@ -1,0 +1,66 @@
+@use 'fonts.scss';
+@use 'colors.scss';
+
+@mixin text-color($color_1, $color_2) {
+  background: -webkit-linear-gradient($color_1, $color_2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills {
+  font-family: fonts.$akayakanadaka_font;
+  color: colors.$slategrey;
+  .header {
+    margin: auto;
+    font-size: 2rem;
+    @include text-color(rgba(141, 154, 166, 0.9), rgba(112,128,144, 0.75));
+    filter: contrast(200%);
+  }
+  .divskills {
+    margin: 10px 0px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 8%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    .subdivskills {
+      .h2 {
+        margin: auto;
+        margin-bottom: 20px;
+        font-family: fonts.$acme_font;
+        font-size: 1.6rem;
+        @include text-color(rgba(141, 154, 166, 0.9), rgba(112,128,144, 0.75));
+        filter: contrast(200%);       
+      }
+      .spanskills {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        li {
+          margin: 5px 0px;
+          display: flex;
+          align-items: center;
+          font-size: 1.4rem;
+          .logo {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .skills {
+    .divskills {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .subdivskills {
+        margin-top: 40px;
+
+      }
+    } 
+  }
+}

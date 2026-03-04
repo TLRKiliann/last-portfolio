@@ -1,0 +1,192 @@
+@use 'fonts.scss';
+@use 'colors.scss';
+
+@keyframes logo {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@mixin text-color($color_1, $color_2) {
+  background: -webkit-linear-gradient($color_1, $color_2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mainSection {
+  max-width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0px;
+  .container {
+    font-family: fonts.$akayakanadaka_font;
+    color: colors.$lightgrey;
+    .grid {
+      position: absolute;
+      margin: 10px auto;
+      display: grid;
+      grid-template-rows: repeat(4, 1fr); 
+      grid-auto-columns: calc((180px - 3em) / 4);
+      grid-auto-flow: column;
+      grid-gap: 1em;
+      height: 180px;
+      filter: opacity(0.11);
+      z-index: -1;
+    }
+    .griditem:nth-child(3n) {
+      background-color: colors.$aqua;
+    }
+    .griditem:nth-child(3n + 2) {
+      background-color: colors.$deepskyblue;
+    }
+    .h3 {
+      margin: auto;
+      text-align: justify;
+      font-family: fonts.$noto_serif;
+      font-size: 1.8rem;
+      @include text-color(rgba(141, 154, 166, 0.9), rgba(112,128,144, 0.75));
+      filter: contrast(200%);
+    }
+    .h1 {
+      margin: auto;
+      font-family: fonts.$noto_serif;
+      font-size: 3.8rem;      
+      @include text-color(rgba(141, 154, 166, 0.9), rgba(112,128,144, 0.75));
+      filter: contrast(200%);
+    } 
+    .h2 {
+      margin: auto;
+      font-family: fonts.$noto_serif;
+      font-size: 2.3rem;
+      @include text-color(rgba(141, 154, 166, 0.9), rgba(112,128,144, 0.75));
+      filter: contrast(200%);
+    }
+    .paragraph {
+      margin-top: 0px;
+      font-family: fonts.$noto_serif;
+      font-size: 2.2rem;
+      background-color: colors.$aqua;
+      background-image: linear-gradient(30deg, rgba(112,128,144, 1) 50%, 
+        colors.$slategrey 60%, colors.$lightgrey 100%);
+      background-size: 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      -moz-text-fill-color: transparent;
+      text-align: justify;
+      text-justify: inter-word;
+      filter: contrast(200%);
+    }
+    .divlogo {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      animation-name: logo;
+      animation-delay: 0s;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+      transform: translateY(0px);
+      transition: ease;
+      .a {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(30deg, colors.$slategrey, colors.$bg_color2);
+        border-radius: 50px;
+        text-decoration: none;
+        font-family: fonts.$acme_font;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: colors.$lightgrey;
+        transform: rotadeY(0deg);
+        transition: ease 0.2s;
+        padding: 5px 12px;
+        &:hover {
+          background: linear-gradient(30deg, colors.$slategrey, colors.$bg_color2);
+          box-shadow: 0px 0px 10px colors.$deepskyblue;
+          color: colors.$deepskyblue;
+          transform: rotate(-15deg);
+        }
+        &:active {
+          box-shadow: 0px 0px 10px colors.$aqua;
+          color: colors.$aqua;
+        }
+      }
+    }
+  }
+  .myPhoto {
+    display: flex;
+    margin-top: -100px;
+    margin-right: 50px;
+    width: 180px;
+    height: auto;
+    filter: opacity(100%);
+    border-radius: 100%;
+    background: linear-gradient(30deg, rgba(255,255,255, 0.7) 5%, transparent 100%);
+    box-shadow: 0 0 10px #6b879f;
+    .photo {
+      display: flex;
+      width: 100%;
+      height: auto;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mainSection {
+    max-width: 1200px;
+    margin: 0px auto;
+    .container {
+      margin-top: 160px;
+      .h3 {
+        font-size: 0.9rem;
+      }
+      .h1 {
+        font-size: 1.5rem;
+      } 
+      .h2 {
+        font-size: 1.4rem;
+      }
+      .paragraph {
+        font-size: 0.9rem;
+      }
+      .divlogo {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: -40px;
+        /*border: 1px solid white;*/
+        .a {
+          margin-top: 40px;
+          font-size: 0.9;
+          padding: 5px 12px;
+        }
+      }
+    }
+  }
+  .myPhoto {
+    position: absolute;
+    top: 210px;
+    left: 120px;
+    width: 120px;
+    height: auto;
+    .photo {
+      display: flex;
+      width: 100%;
+      height: auto;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+  }
+}
