@@ -11,7 +11,7 @@ const ProjectFour = (): JSX.Element => {
 
   const [ isOpened, setIsOpened ] = useState<boolean>(false);
 
-  const handleCollapse = () => {
+  const handleCollapse = (): void => {
     setIsOpened(!isOpened);
   };
 
