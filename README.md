@@ -1,2 +1,0 @@
-# last-portfolio
-portfolio nextjs
