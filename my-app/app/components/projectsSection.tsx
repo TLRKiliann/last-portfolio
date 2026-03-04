@@ -1,13 +1,13 @@
-import React from 'react';
-import ProjectOne from './projects/projectOne'
-import ProjectTwo from './projects/projectTwo'
-import ProjectThree from './projects/projectThree'
-import ProjectFour from './projects/projectFour'
-import ProjectFive from './projects/projectFive'
-import VerticalText from './projects/verticalText'
-import style from '@/styles/projects.module.scss'
+import { JSX } from 'react';
+import ProjectOne from './projects/projectOne';
+import ProjectTwo from './projects/projectTwo';
+import ProjectThree from './projects/projectThree';
+import ProjectFour from './projects/projectFour';
+import ProjectFive from './projects/projectFive';
+import VerticalText from './projects/verticalText';
+import style from '@/styles/projects.module.scss';
 
-export default function ProjectsSection() {
+const ProjectsSection = (): JSX.Element => {
   return (
     <div id="projects" className={style.project}>
       <h1 className={style.header}>
@@ -36,4 +36,5 @@ export default function ProjectsSection() {
 
     </div>
   )
-}
+};
+export default ProjectsSection;

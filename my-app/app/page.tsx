@@ -1,14 +1,15 @@
-import Image  from 'next/image'
-import Layout from "./components/layout"
-import Navbar from './components/navbar'
-import MainTitle from './components/mainTitle'
-import SkillsSection from './components/skillsSection'
-import ProjectsSection from './components/projectsSection'
-import Footer from './components/footer'
-import style from '@/styles/page.module.scss'
-import path from '@/public/images/green_path.jpg'
+import { JSX } from 'react';
+import Image  from 'next/image';
+import Layout from "./components/layout";
+import Navbar from './components/navbar';
+import MainTitle from './components/mainTitle';
+import SkillsSection from './components/skillsSection';
+import ProjectsSection from './components/projectsSection';
+import Footer from './components/footer';
+import style from '@/styles/page.module.scss';
+import path from '@/public/images/green_path.jpg';
 
-export default function Page() {
+const Page = (): JSX.Element => {
 
   return (
     <>
@@ -51,4 +52,5 @@ export default function Page() {
       <Footer />
     </>
   )
-}
+};
+export default Page;

@@ -1,12 +1,13 @@
+import { JSX } from 'react';
 import { FaSass, FaReact, FaVuejs, FaWordpress, FaGithub,
-  FaPython, FaWindows, FaUbuntu } from 'react-icons/fa'
+  FaPython, FaWindows, FaUbuntu } from 'react-icons/fa';
 import { SiTailwindcss, SiTypescript, SiSvelte, SiMysql,
-  SiMongoose, SiGimp } from 'react-icons/si'
-import { TbBrandNextjs } from 'react-icons/tb'
-import { FcLinux } from 'react-icons/fc'
-import style from '@/styles/skills.module.scss'
+  SiMongoose, SiGimp } from 'react-icons/si';
+import { TbBrandNextjs } from 'react-icons/tb';
+import { FcLinux } from 'react-icons/fc';
+import style from '@/styles/skills.module.scss';
 
-export default function SkillsSection() {
+const SkillsSection = (): JSX.Element => {
   return (
     <div id="linkskills" className={style.skills}>
       <h1 className={style.header}>
@@ -113,4 +114,5 @@ export default function SkillsSection() {
       </div>
     </div>
   )
-}
+};
+export default SkillsSection;

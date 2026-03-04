@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import { JSX, useState } from 'react';
 import Image from 'next/image'
 import ButtonHandleCollapse from './buttonHandleCollapse'
 import { FaPython } from 'react-icons/fa'
@@ -8,11 +8,11 @@ import { SiMysql } from 'react-icons/si'
 import TimeTrack from '@/public/images/time-track.png'
 import style from '@/styles/projects.module.scss'
 
-export default function ProjectFive(){
+const ProjectFive = (): JSX.Element => {
 
   const [ isOpened, setIsOpened ] = useState<boolean>(false);
 
-  const handleCollapse = () => {
+  const handleCollapse = (): void => {
     setIsOpened(!isOpened);
   };
 
@@ -77,4 +77,5 @@ export default function ProjectFive(){
       </span>
     </div>
   )
-}
+};
+export default ProjectFive;

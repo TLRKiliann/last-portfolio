@@ -1,9 +1,10 @@
+import { JSX } from "react";
 import Image from "next/image";
-import { FaGithub, FaYoutube, FaCodepen, FaLinkedin } from 'react-icons/fa'
-import style from '@/styles/mainTitle.module.scss'
-import myPicture from '@/public/images/photo_logo2.png'
+import { FaGithub, FaYoutube, FaCodepen, FaLinkedin } from 'react-icons/fa';
+import style from '@/styles/mainTitle.module.scss';
+import myPicture from '@/public/images/photo_logo2.png';
 
-export default function MainTitle() {
+const MainTitle = (): JSX.Element => {
   return <>
     <div className={style.mainSection}>
       <div className={style.container}>
@@ -120,4 +121,5 @@ export default function MainTitle() {
 
     </div>
   </>;
-}
+};
+export default MainTitle;

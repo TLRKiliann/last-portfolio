@@ -1,9 +1,9 @@
 'use client'
 
 import { motion, useInView, useAnimation } from 'framer-motion';
-import React, { useRef, useEffect, PropsWithChildren } from 'react'
+import { useRef, useEffect, PropsWithChildren, JSX } from 'react';
 
-export default function Layout({ children }: PropsWithChildren) {
+const Layout = ({ children }: PropsWithChildren): JSX.Element => {
 
   const ref = useRef(null)
   const isInView = useInView(ref, {once: true})
@@ -13,7 +13,8 @@ export default function Layout({ children }: PropsWithChildren) {
     if (isInView) {
       mainControls.start("visible")
     }
-  }, [isInView])
+  }, [isInView]);
+
   return (
     <>
       <main>
@@ -42,4 +43,5 @@ export default function Layout({ children }: PropsWithChildren) {
       </main>
     </>
   )
-}
+};
+export default Layout;

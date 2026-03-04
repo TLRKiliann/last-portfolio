@@ -1,13 +1,13 @@
 'use client'
 
-import React, { useState } from 'react';
+import { JSX, useState } from 'react';
 import Image from 'next/image'
 import ButtonHandleCollapse from './buttonHandleCollapse'
 import { FaWordpress } from 'react-icons/fa'
 import Axis from '@/public/images/institut-axis.png'
 import style from '@/styles/projects.module.scss'
 
-export default function ProjectFour() {
+const ProjectFour = (): JSX.Element => {
 
   const [ isOpened, setIsOpened ] = useState<boolean>(false);
 
@@ -83,4 +83,5 @@ export default function ProjectFour() {
       </span>
     </div>
   )
-}
+};
+export default ProjectFour;

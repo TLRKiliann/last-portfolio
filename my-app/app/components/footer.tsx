@@ -1,7 +1,8 @@
-import { FaGithub, FaYoutube, FaCodepen, FaLinkedin } from 'react-icons/fa'
-import style from '@/styles/footer.module.scss'
+import { JSX } from 'react';
+import { FaGithub, FaYoutube, FaCodepen, FaLinkedin } from 'react-icons/fa';
+import style from '@/styles/footer.module.scss';
 
-export default function Footer() {
+const Footer = (): JSX.Element => {
   return (
     <>
       <footer>
@@ -55,4 +56,5 @@ export default function Footer() {
       </footer>
     </>
   )
-}
+};
+export default Footer;

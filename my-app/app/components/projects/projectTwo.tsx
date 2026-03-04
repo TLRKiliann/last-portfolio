@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import { JSX, useState } from 'react';
 import Image from 'next/image'
 import ButtonHandleCollapse from './buttonHandleCollapse'
 import { FaSass } from 'react-icons/fa'
@@ -8,7 +8,7 @@ import { SiMysql, SiVitest } from 'react-icons/si'
 import Agenda from '@/public/images/agenda-map.png'
 import style from '@/styles/projects.module.scss'
 
-export default function ProjectTwo() {
+const ProjectTwo = (): JSX.Element => {
 
   const [ isOpened, setIsOpened ] = useState<boolean>(false);
 
@@ -101,4 +101,5 @@ export default function ProjectTwo() {
       </span>
     </div>
   )
-}
+};
+export default ProjectTwo;

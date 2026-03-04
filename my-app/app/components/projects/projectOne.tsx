@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import { JSX, useState } from 'react';
 import Image from 'next/image'
 import ButtonHandleCollapse from './buttonHandleCollapse'
 import { SiTailwindcss, SiMongoose } from 'react-icons/si'
@@ -9,7 +9,7 @@ import myFace from '@/public/images/e-commerce.png'
 import style from '@/styles/projects.module.scss'
 
 
-export default function ProjectOne() {
+const ProjectOne = (): JSX.Element => {
 
   const [ isOpened, setIsOpened ] = useState<boolean>(false);
   
@@ -85,4 +85,5 @@ export default function ProjectOne() {
       </span>
     </div>
   )
-}
+};
+export default ProjectOne;

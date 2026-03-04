@@ -1,9 +1,9 @@
-import React from 'react'
-import Image from 'next/image'
-import style from '@/styles/navbar.module.scss'
-import Computer from '@/public/images/computing.png'
+import { JSX } from 'react';
+import Image from 'next/image';
+import style from '@/styles/navbar.module.scss';
+import Computer from '@/public/images/computing.png';
 
-export default function Navbar() {
+const Navbar = (): JSX.Element => {
   return (
     <>
       <nav className={style.navbar}>
@@ -33,4 +33,5 @@ export default function Navbar() {
       </nav>
     </>
   )
-}
+};
+export default Navbar;

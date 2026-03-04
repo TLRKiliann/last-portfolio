@@ -1,10 +1,11 @@
-import style from '@/styles/projects.module.scss'
+import { JSX } from 'react';
+import style from '@/styles/projects.module.scss';
 
 type PropsHandle = {
 	handleCollapse: () => void;
 };
 
-const ButtonHandleCollapse = (props: PropsHandle) => {
+const ButtonHandleCollapse = (props: PropsHandle): JSX.Element => {
 	return (
       <div className={style.divbtncoll}>
         <button 
@@ -17,5 +18,5 @@ const ButtonHandleCollapse = (props: PropsHandle) => {
       </div>
 
 	)
-}
-export default ButtonHandleCollapse
+};
+export default ButtonHandleCollapse;
