@@ -5,7 +5,7 @@ import Image from 'next/image'
 import ButtonHandleCollapse from './buttonHandleCollapse'
 import { FaSass } from 'react-icons/fa'
 import { SiMysql, SiVitest } from 'react-icons/si'
-import Agenda from '@/public/images/agenda-map.png'
+//import Agenda from '@/public/images/agenda-map.png'
 import style from '@/styles/projects.module.scss'
 
 const ProjectTwo = (): JSX.Element => {
@@ -23,7 +23,7 @@ const ProjectTwo = (): JSX.Element => {
       </h2>
       <div className={style.divimg}>
         <Image 
-          src={Agenda}
+          src='/images/agenda-map.png'
           width={380}
           height={200}
           alt="agenda img"

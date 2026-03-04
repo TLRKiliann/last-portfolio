@@ -5,7 +5,7 @@ import Image from 'next/image'
 import ButtonHandleCollapse from './buttonHandleCollapse'
 import { FaPython } from 'react-icons/fa'
 import { SiMysql } from 'react-icons/si'
-import TimeTrack from '@/public/images/time-track.png'
+//import TimeTrack from '@/public/images/time-track.png'
 import style from '@/styles/projects.module.scss'
 
 const ProjectFive = (): JSX.Element => {
@@ -23,7 +23,7 @@ const ProjectFive = (): JSX.Element => {
       </h2>
       <div className={style.divimg}>
         <Image 
-          src={TimeTrack}
+          src='/images/time-track.png'
           width={380}
           height={200}
           alt="time-track img"

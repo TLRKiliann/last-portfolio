@@ -5,7 +5,7 @@ import Image from 'next/image'
 import ButtonHandleCollapse from './buttonHandleCollapse'
 import { SiTailwindcss, SiMongoose } from 'react-icons/si'
 import { TbBrandNextjs } from 'react-icons/tb'
-import myFace from '@/public/images/e-commerce.png'
+//import myFace from '@/public/images/e-commerce.png'
 import style from '@/styles/projects.module.scss'
 
 
@@ -24,7 +24,7 @@ const ProjectOne = (): JSX.Element => {
       </h2>
       <div className={style.divimg}>
         <Image 
-          src={myFace}
+          src='/images/e-commerce.png'
           alt="e-commerce img"
           width={380}
           height={200}

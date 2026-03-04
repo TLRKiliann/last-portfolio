@@ -2,7 +2,7 @@ import { JSX } from "react";
 import Image from "next/image";
 import { FaGithub, FaYoutube, FaCodepen, FaLinkedin } from 'react-icons/fa';
 import style from '@/styles/mainTitle.module.scss';
-import myPicture from '@/public/images/photo_logo2.png';
+//import myPicture from '@/public/images/photo_logo2.png';
 
 const MainTitle = (): JSX.Element => {
   return <>
@@ -111,7 +111,7 @@ const MainTitle = (): JSX.Element => {
 
       <div className={style.myPhoto}>
         <Image
-          src={myPicture}
+          src='/images/photo_logo2.png'
           width={180}
           height={180}
           alt="picture of me"

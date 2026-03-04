@@ -1,7 +1,7 @@
 import { JSX } from 'react';
 import Image from 'next/image';
 import style from '@/styles/navbar.module.scss';
-import Computer from '@/public/images/computing.png';
+//import Computer from '@/public/images/computing.png';
 
 const Navbar = (): JSX.Element => {
   return (
@@ -10,7 +10,7 @@ const Navbar = (): JSX.Element => {
 
         <div className={style.image}>
           <Image
-            src={Computer}
+            src='/images/computing.png'
             width={60}
             height={60}
             alt="small photo"

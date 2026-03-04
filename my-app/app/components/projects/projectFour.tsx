@@ -4,7 +4,7 @@ import { JSX, useState } from 'react';
 import Image from 'next/image'
 import ButtonHandleCollapse from './buttonHandleCollapse'
 import { FaWordpress } from 'react-icons/fa'
-import Axis from '@/public/images/institut-axis.png'
+//import Axis from '@/public/images/institut-axis.png'
 import style from '@/styles/projects.module.scss'
 
 const ProjectFour = (): JSX.Element => {
@@ -22,7 +22,7 @@ const ProjectFour = (): JSX.Element => {
       </h2>
       <div className={style.divimg}>
         <Image 
-          src={Axis}
+          src='/images/institut-axis.png'
           width={380}
           height={200}
           alt="axis img"

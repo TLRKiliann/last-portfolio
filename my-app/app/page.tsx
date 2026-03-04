@@ -7,7 +7,7 @@ import SkillsSection from './components/skillsSection';
 import ProjectsSection from './components/projectsSection';
 import Footer from './components/footer';
 import style from '@/styles/page.module.scss';
-import path from '@/public/images/green_path.jpg';
+//import path from '@/public/images/green_path.jpg';
 
 const Page = (): JSX.Element => {
 
@@ -18,7 +18,7 @@ const Page = (): JSX.Element => {
       <div className={style.maindivimg}>
         <div className={style.divbgimg}>
           <Image 
-            src={path} 
+            src='/images/green_path.jpg'
             width="500"
             height="500" 
             className={style.bg_img} 
