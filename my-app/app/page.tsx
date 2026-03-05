@@ -7,7 +7,6 @@ import SkillsSection from './components/skillsSection';
 import ProjectsSection from './components/projectsSection';
 import Footer from './components/footer';
 import style from '@/styles/page.module.scss';
-//import path from '@/public/images/green_path.jpg';
 
 const Page = (): JSX.Element => {
 

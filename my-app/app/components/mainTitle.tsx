@@ -2,7 +2,6 @@ import { JSX } from "react";
 import Image from "next/image";
 import { FaGithub, FaYoutube, FaCodepen, FaLinkedin } from 'react-icons/fa';
 import style from '@/styles/mainTitle.module.scss';
-//import myPicture from '@/public/images/photo_logo2.png';
 
 const MainTitle = (): JSX.Element => {
   return <>

@@ -1,12 +1,11 @@
 'use client'
 
 import { JSX, useState } from 'react';
-import Image from 'next/image'
-import ButtonHandleCollapse from './buttonHandleCollapse'
-import { FaSass } from 'react-icons/fa'
-import { SiMysql, SiVitest } from 'react-icons/si'
-//import Agenda from '@/public/images/agenda-map.png'
-import style from '@/styles/projects.module.scss'
+import Image from 'next/image';
+import ButtonHandleCollapse from './buttonHandleCollapse';
+import { FaSass } from 'react-icons/fa';
+import { SiMysql, SiVitest } from 'react-icons/si';
+import style from '@/styles/projects.module.scss';
 
 const ProjectTwo = (): JSX.Element => {
 

@@ -1,7 +1,6 @@
 import { JSX } from 'react';
 import Image from 'next/image';
 import style from '@/styles/navbar.module.scss';
-//import Computer from '@/public/images/computing.png';
 
 const Navbar = (): JSX.Element => {
   return (

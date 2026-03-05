@@ -1,11 +1,10 @@
 'use client'
 
 import { JSX, useState } from 'react';
-import Image from 'next/image'
-import ButtonHandleCollapse from './buttonHandleCollapse'
-import { FaWordpress } from 'react-icons/fa'
-//import Axis from '@/public/images/institut-axis.png'
-import style from '@/styles/projects.module.scss'
+import Image from 'next/image';
+import ButtonHandleCollapse from './buttonHandleCollapse';
+import { FaWordpress } from 'react-icons/fa';
+import style from '@/styles/projects.module.scss';
 
 const ProjectFour = (): JSX.Element => {
 

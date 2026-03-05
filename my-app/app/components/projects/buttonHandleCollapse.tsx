@@ -7,16 +7,15 @@ type PropsHandle = {
 
 const ButtonHandleCollapse = (props: PropsHandle): JSX.Element => {
 	return (
-      <div className={style.divbtncoll}>
-        <button 
-          type="button" 
-          onClick={props.handleCollapse} 
-          className={style.btncollapse}
-        >
-          Read more
-        </button>
-      </div>
-
+    <div className={style.divbtncoll}>
+      <button 
+        type="button" 
+        onClick={props.handleCollapse} 
+        className={style.btncollapse}
+      >
+        Read more
+      </button>
+    </div>
 	)
 };
 export default ButtonHandleCollapse;

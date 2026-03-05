@@ -1,13 +1,11 @@
 'use client'
 
 import { JSX, useState } from 'react';
-import Image from 'next/image'
-import ButtonHandleCollapse from './buttonHandleCollapse'
-import { SiTailwindcss, SiMongoose } from 'react-icons/si'
-import { TbBrandNextjs } from 'react-icons/tb'
-//import myFace from '@/public/images/e-commerce.png'
-import style from '@/styles/projects.module.scss'
-
+import Image from 'next/image';
+import ButtonHandleCollapse from './buttonHandleCollapse';
+import { SiTailwindcss, SiMongoose } from 'react-icons/si';
+import { TbBrandNextjs } from 'react-icons/tb';
+import style from '@/styles/projects.module.scss';
 
 const ProjectOne = (): JSX.Element => {
 

@@ -1,12 +1,11 @@
 'use client'
 
 import { JSX, useState } from 'react';
-import Image from 'next/image'
-import ButtonHandleCollapse from './buttonHandleCollapse'
-import { FaSass } from 'react-icons/fa'
-import { SiVitest } from 'react-icons/si'
-//import Boulangerie from '@/public/images/boulangerie.png'
-import style from '@/styles/projects.module.scss'
+import Image from 'next/image';
+import ButtonHandleCollapse from './buttonHandleCollapse';
+import { FaSass } from 'react-icons/fa';
+import { SiVitest } from 'react-icons/si';
+import style from '@/styles/projects.module.scss';
 
 const ProjectThree = (): JSX.Element => {
 
@@ -17,7 +16,6 @@ const ProjectThree = (): JSX.Element => {
   };
 
   return (
-
     <div className={style.subdivproject}>
       <h2 className={style.h2}>
         Site vitrine
