@@ -48,13 +48,13 @@ const MainTitle = (): JSX.Element => {
         </div>
 
         <h3 className={style.h3}>
-          Hello ! Welcome to my portfolio. My name's -
+          Welcome to my portfolio !
         </h3>
         <h1 className={style.h1}>
           Cédric Kuchen
         </h1>
         <h2 className={style.h2}>
-          Software Engineer.&nbsp;
+          Web Developer&nbsp;
         </h2>
         <p className={style.paragraph}>
           Self-taught & passionate about web development.

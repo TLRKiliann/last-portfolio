@@ -3,7 +3,8 @@
 import { JSX, useState } from 'react';
 import Image from 'next/image';
 import ButtonHandleCollapse from './buttonHandleCollapse';
-import { FaWordpress } from 'react-icons/fa';
+import { TbBrandNextjs } from 'react-icons/tb';
+import { SiPostgresql, SiTailwindcss } from "react-icons/si";
 import style from '@/styles/projects.module.scss';
 
 const ProjectFour = (): JSX.Element => {
@@ -17,11 +18,11 @@ const ProjectFour = (): JSX.Element => {
   return (
     <div className={style.subdivproject}>
       <h2 className={style.h2}>
-        Institut-axis
+        Dashboard
       </h2>
       <div className={style.divimg}>
         <Image 
-          src='/images/institut-axis.png'
+          src='/images/dashboard.png'
           width={380}
           height={200}
           alt="axis img"
@@ -31,8 +32,18 @@ const ProjectFour = (): JSX.Element => {
       
       <span className={style.spanlogo}>
         <div className={style.divlogo}>
-          <FaWordpress size={24} className={style.logo} />
-          <p className={style.titlelogo}>Wordpress</p>
+          <TbBrandNextjs size={24} className={style.logo} />
+          <p className={style.titlelogo}>Next.js</p>
+        </div>
+
+        <div className={style.divlogo}>
+          <SiTailwindcss size={24} className={style.logo} />
+          <p className={style.titlelogo}>Tailwind</p>
+        </div>
+
+        <div className={style.divlogo}>
+          <SiPostgresql size={24} className={style.logo} />
+          <p className={style.titlelogo}>PostgreSQL</p>
         </div>
       </span>
 
@@ -42,42 +53,46 @@ const ProjectFour = (): JSX.Element => {
           
         <section className={`${isOpened === true ? style.section : style.sectionhidden}`}>
           <p className={style.paragraph}>
-            Le directeur de l'Institut-Axis m'a demandé de lui faire un site 
-            avec Wordpress pour son association, sur la gestion de crise.
-            La réalisation de ce projet s'est faite à l'aide des librairies 
-            Ocean-WP et Elementor (version gratuite). Le site est hébergé chez 
-            infomaniak.
-            <br />
-            Le site de l'Institut-Axis comporte une barre de menu pour naviguer 
-            d'une page à l'autre, en fonction des thématiques. Ainsi qu'un login pour 
-            accéder au blog.
+            Dans ce projet j'ai eu l'envie de tout utiliser ce que je pouvais pour une sécurité maximale.
+            Que ce soit tant côté utilisateur que coté admin.
+          </p>  
+          <p>
+            L'utilisateur peut se loger et utiliser le site comme un site e-commerce. Il peut également envoyer
+            des messages aux autres membres du site et voir qui est connecté ou non.
           </p>
-          <p className={style.paragraph}>
-            Cette expérience m'a appris plusieurs choses :
+          <p>
+            L'administrateur peut voir l'ip de qui se connecte et mapper l'ip (pour autant que ça ne soit pas
+            depuis un VPN). Il peut consulter les graphiques des ventes. Ajouter des articles, les supprimer, etc.
           </p>
-
+          <p>
+            Pour ce faire j'ai utilisé :
+          </p>
           <ul className={style.ul}>
-            <li className={style.li}>Conceptualiser un site en fonction des attentes d'un demandeur.</li>
-            <li className={style.li}>Le choix de package chez un hébergeur (prix, taille, etc).</li>
-            <li className={style.li}>Le nom de domaine, les backup</li>
-            <li className={style.li}>Sécurité et les mises-à-jour</li>
-            <li className={style.li}>Les performances</li>
-            <li className={style.li}>Le SEO</li>
-            <li className={style.li}>Les cookies, politique de confidentialité.</li>
+            <li className={style.li}>@tanstack</li>
+            <li className={style.li}>jsonwebtoken - bcrypt</li>
+            <li className={style.li}>PostgreSQL avec Prisma</li>
+            <li className={style.li}>Zustand - Zod - TypeScript</li>
+            <li className={style.li}>server-action avec next-safe-action</li>
+            <li className={style.li}>NextAuth avec Middleware</li>
           </ul>
           <p className={style.paragraph}>
-            Le directeur et son associé sont ravis du résultat. Mon impression est 
-            que la cohérence de site et le design auraient pu être améliorés.
+            C'est un projet complexe et très riche. J'ai énormément appris
+            lors de sa réalisation.
           </p>
         </section>
 
       </div>
 
-      <span className={style.spanlinkaxis}>
-        <a href="https://www.institut-axis.org/"
+      <span className={style.spanlink}>
+        <a href="https://github.com/TLRKiliann/Nextjs-Dashboard" 
           rel="noopener" target="_blank"
           className={style.a}>
-          Accéder au site
+          GitHub
+        </a>
+        <a href="https://www.youtube.com/watch?v=fMMOh8GGPV0"
+          rel="noopener" target="_blank"
+          className={style.a}>
+          Youtube
         </a>
       </span>
     </div>
