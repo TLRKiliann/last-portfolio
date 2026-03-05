@@ -19,7 +19,8 @@ const Page = (): JSX.Element => {
           <Image 
             src='/images/green_path.jpg'
             width="500"
-            height="500" 
+            height="500"
+            loading="eager"
             className={style.bg_img} 
             alt="image bg"
           />
