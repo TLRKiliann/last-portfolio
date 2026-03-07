@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #000;
+  background: colors.$dark_black;
   scroll-behavior: smooth;
   overflow-x: hidden;  
   overflow-y: scroll;
@@ -13,7 +13,7 @@ body {
     width: 10px;
   }
   &::-webkit-scrollbar-track {
-    background: #3A4958;
+    background: colors.$darkslategrey;
     border-radius: 10px;
   }
   &::-webkit-scrollbar-thumb {
@@ -21,7 +21,7 @@ body {
     border-radius: 10px;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: #617891;
+    background: colors.$darkslateblue;
   }
 }
 

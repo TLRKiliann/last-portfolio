@@ -27,8 +27,9 @@
   .divimg {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: auto;
     height: auto;
+    border: none;
     border-radius: 7px;
     filter: opacity(85%);
     .img {
@@ -79,18 +80,19 @@
       &:hover {
         background: rgba(112,128,144, 0.5); 
         box-shadow: 0 0 0px colors.$slategrey;
-        color: #99adbd; 
+        color: colors.$lightslateblue; 
       }
       &:active {
         color: colors.$whitesmoke;
         background: rgba(112,128,144, 0.5);
-        box-shadow: 0 0 10px #99adbd;
+        box-shadow: 0 0 10px colors.$lightslateblue;
       }
     }
   }
   .sectionhidden {
+    width: auto;
     height: 0px;
-    color: #99adbd;
+    color: colors.$lightslateblue;
     background: colors.$bg_color;
     border: 1px solid rgba(112,128,144, 0.5);
     border-radius: 3px;    
@@ -103,7 +105,7 @@
       width: 10px;
     }
     &::-webkit-scrollbar-track {
-      background: #3A4958;
+      background: colors.$darkslategrey;
       border-radius: 10px;
     }
     &::-webkit-scrollbar-thumb {
@@ -111,7 +113,7 @@
       border-radius: 10px;
     }
     &::-webkit-scrollbar-thumb:hover {
-      background: #617891;
+      background: colors.$darkslateblue;
     }
     .paragraph {
       text-align: justify;
@@ -127,8 +129,9 @@
   }
   .section {
     margin: 20px 0px;
+    width: auto;
     height: 240px;
-    color: #99adbd;
+    color: colors.$lightslateblue;
     background: colors.$bg_color;
     border: 1px solid rgba(112,128,144, 0.5);
     border-radius: 3px;    
@@ -140,7 +143,7 @@
       width: 10px;
     }
     &::-webkit-scrollbar-track {
-      background: #3A4958;
+      background: colors.$darkslategrey;
       border-radius: 10px;
     }
     &::-webkit-scrollbar-thumb {
@@ -148,7 +151,7 @@
       border-radius: 10px;
     }
     &::-webkit-scrollbar-thumb:hover {
-      background: #617891;
+      background: colors.$darkslateblue;
     }
     .paragraph {
       text-align: justify;
@@ -163,14 +166,15 @@
     }
   }
   .spanlink {
-    width: 80%;
+    width: auto;
     margin: auto;
     display: flex;
     justify-content: space-between;
+    border: none;
     .a {
       text-decoration: none;
       font-size: 1.2rem;
-      color: #6b879f;
+      color: colors.$middleslateblue;
       &:hover {
         cursor: pointer;
         color: colors.$deepskyblue;
@@ -210,11 +214,11 @@
     }
     .spanlinkaxis {
       margin-left: 20px;
-      color: dodgerblue;
+      color: colors.$dodgerblue;
       .a {
         text-decoration: none;
         font-size: 1.2rem;
-        color: #6b879f;
+        color: colors.$middleslateblue;
         &:hover {
           cursor: pointer;
           color: colors.$deepskyblue;
