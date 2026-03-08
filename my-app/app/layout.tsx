@@ -1,6 +1,7 @@
 import { JSX } from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Navbar from "./components/navbar";
 import "@/styles/globals.scss";
 
 const geistSans = Geist({
@@ -26,6 +27,7 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Navbar />
         {children}
       </body>
     </html>

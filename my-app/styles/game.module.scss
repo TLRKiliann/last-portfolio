@@ -1,0 +1,16 @@
+@use 'fonts.scss';
+@use 'colors.scss';
+
+@mixin text-color($color_1, $color_2) {
+    background: -webkit-linear-gradient($color_1, $color_2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.h1 {
+    margin: 20px;
+    font-family: fonts.$noto_serif;
+    font-size: 3.8rem;      
+    @include text-color(rgba(141, 154, 166, 0.9), rgba(112,128,144, 0.75));
+    filter: contrast(200%);
+}

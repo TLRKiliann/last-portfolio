@@ -1,7 +1,7 @@
 import { JSX } from 'react';
 import Image  from 'next/image';
 import Layout from "./components/layout";
-import Navbar from './components/navbar';
+//import Navbar from './components/navbar';
 import MainTitle from './components/mainTitle';
 import SkillsSection from './components/skillsSection';
 import ProjectsSection from './components/projectsSection';
@@ -12,7 +12,7 @@ const Page = (): JSX.Element => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <div className={style.maindivimg}>
         <div className={style.divbgimg}>

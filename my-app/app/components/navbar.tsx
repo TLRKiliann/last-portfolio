@@ -1,4 +1,5 @@
 import { JSX } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import style from '@/styles/navbar.module.scss';
 
@@ -16,6 +17,9 @@ const Navbar = (): JSX.Element => {
             className={style.img}
           />
         </div>
+
+        <Link href="/">Main</Link>
+        <Link href="/game">Game</Link>
 
         <ul className={style.ul}>
           <li className={style.li}>
