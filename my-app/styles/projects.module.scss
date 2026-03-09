@@ -190,13 +190,13 @@
   color: colors.$lightgrey;
   font-family: fonts.$akayakanadaka_font;
   .header {
-    margin: auto 0px;
-    font-size: 2rem;
+    margin: auto;
+    font-size: 2.0rem;
     @include text-color(rgba(141, 154, 166, 0.9), rgba(112,128,144, 0.75));
     filter: contrast(200%);
   }
   .divproject {
-    margin: 20px 0px;
+    margin: 20px 10px;
     display: flex;
     align-items: top;
     justify-content: space-between;

@@ -13,44 +13,42 @@ const Navbar = (): JSX.Element => {
   const isGamePage: boolean = pathname === "/game";
 
   return (
-    <>
-      <nav className={style.navbar}>
+    <nav className={style.navbar}>
 
-        <div className={style.image}>
-          <Image
-            src='/images/computing.png'
-            width={60}
-            height={60}
-            alt="small photo"
-            className={style.img}
-          />
-        </div>
+      <div className={style.image}>
+        <Image
+          src='/images/computing.png'
+          width={60}
+          height={60}
+          alt="small photo"
+          className={style.img}
+        />
+      </div>
 
-        <ul className={style.ul}>
-          <li className={style.li}>
-            {!isMainPage && (<Link href="/">Main</Link>)}
-          </li>
-          {!isGamePage && (
-            <>
-              <li className={style.li}>
-                <Link href="/game">Game</Link>
-              </li>
-              <li className={style.li}>
-                <a href="#linkskills" className={style.link}>
-                  Skills
-                </a>
-              </li>
-              <li className={style.li}>
-                <a href="#projects" className={style.link}>
-                  Projects
-                </a>
-              </li>
-            </>
-          )}
-        </ul>
-        
-      </nav>
-    </>
+      <ul className={style.ul}>
+        <li className={style.li}>
+          {!isMainPage && (<Link href="/">Profile</Link>)}
+        </li>
+        {!isGamePage && (
+          <>
+            <li className={style.li}>
+              <Link href="/game">Game</Link>
+            </li>
+            <li className={style.li}>
+              <a href="#linkskills" className={style.link}>
+                Skills
+              </a>
+            </li>
+            <li className={style.li}>
+              <a href="#projects" className={style.link}>
+                Projects
+              </a>
+            </li>
+          </>
+        )}
+      </ul>
+
+    </nav>
   )
 };
 export default Navbar;

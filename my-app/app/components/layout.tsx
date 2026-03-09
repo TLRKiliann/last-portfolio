@@ -17,30 +17,28 @@ const Layout = ({ children }: PropsWithChildren): JSX.Element => {
 
   return (
     <>
-      <main>
-        <div ref={ref}>
-          <motion.div initial="hidden" animate={mainControls} variants={{
-            hidden: {
-              scale: .3,
-              y: 200,
-              opacity: 0
-            },
-            visible: {
-              scale: 1,
-              y: 0,
-              opacity: 1,
-              transition: {
-                delay: .35,
-                ease: "linear",
-                duration: 0.35,
-              }
-            },
-            }}
-          >
-            {children}
-          </motion.div>
-        </div>
-      </main>
+      <div ref={ref}>
+        <motion.div initial="hidden" animate={mainControls} variants={{
+          hidden: {
+            scale: .3,
+            y: 200,
+            opacity: 0
+          },
+          visible: {
+            scale: 1,
+            y: 0,
+            opacity: 1,
+            transition: {
+              delay: .35,
+              ease: "linear",
+              duration: 0.35,
+            }
+          },
+          }}
+        >
+          {children}
+        </motion.div>
+      </div>
     </>
   )
 };

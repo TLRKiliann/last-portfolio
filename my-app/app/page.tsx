@@ -1,7 +1,6 @@
 import { JSX } from 'react';
 import Image  from 'next/image';
 import Layout from "./components/layout";
-//import Navbar from './components/navbar';
 import MainTitle from './components/mainTitle';
 import SkillsSection from './components/skillsSection';
 import ProjectsSection from './components/projectsSection';
@@ -9,11 +8,8 @@ import Footer from './components/footer';
 import style from '@/styles/page.module.scss';
 
 const Page = (): JSX.Element => {
-
   return (
     <>
-      {/* <Navbar /> */}
-
       <div className={style.maindivimg}>
         <div className={style.divbgimg}>
           <Image 

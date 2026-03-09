@@ -7,10 +7,45 @@
     -webkit-text-fill-color: transparent;
 }
 
+.starCanvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.maindivimg {
+    display: flex;
+    justify-content: center; 
+    .divbgimg {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        opacity: 0.2;
+        z-index: -1;
+        .bg_img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}
+
 .h1 {
     margin: 20px;
     font-family: fonts.$noto_serif;
-    font-size: 3.8rem;      
+    font-size: 2.4rem;      
     @include text-color(rgba(141, 154, 166, 0.9), rgba(112,128,144, 0.75));
     filter: contrast(200%);
+}
+
+.container {
+    width: 80%;
+    height: 70vh;
+
+    margin: auto;
+    border: 1px solid cyan;
 }
