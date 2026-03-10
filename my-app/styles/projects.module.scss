@@ -205,10 +205,10 @@
     }
   }
   .seconddivproject {
-    margin: 40px 0;
+    margin: 20px 10px;
     display: flex;
     align-items: top;
-    justify-content: space-evenly;
+    justify-content: space-between;
     .subdivproject {
       @include container-project();
     }

@@ -4,6 +4,7 @@ import ProjectTwo from './projects/projectTwo';
 import ProjectThree from './projects/projectThree';
 import ProjectFour from './projects/projectFour';
 import ProjectFive from './projects/projectFive';
+import ProjectSix from './projects/projectSix';
 import VerticalText from './projects/verticalText';
 import style from '@/styles/projects.module.scss';
 
@@ -29,6 +30,8 @@ const ProjectsSection = (): JSX.Element => {
         <ProjectFour />
 
         <ProjectFive />
+
+        <ProjectSix />
 
       </div>
 
