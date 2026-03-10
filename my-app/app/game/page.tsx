@@ -13,66 +13,76 @@ const GamePage = (): JSX.Element => {
     const canvas = canvasRef.current!;
     const ctx = canvas.getContext("2d")!;
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    let width = window.innerWidth;
+    let height = window.innerHeight;
 
-    let mouse = { x: 0, y: 0 };
-    let prev = { x: 0, y: 0 };
+    canvas.width = width;
+    canvas.height = height;
 
-    const colors = [
-      "#ffffff",
-      "#7df9ff",
-      "#c77dff",
-      "#ffd166",
-      "#ff4d6d"
-    ];
+    const mouse = { x: width / 2, y: height / 2 };
 
-    const mouseMove = (e: MouseEvent) => {
-      prev.x = mouse.x;
-      prev.y = mouse.y;
+    const points: {x:number,y:number}[] = [];
 
+    for (let i = 0; i < 20; i++) {
+      points.push({ x: mouse.x, y: mouse.y });
+    }
+
+    window.addEventListener("mousemove", (e) => {
       mouse.x = e.clientX;
       mouse.y = e.clientY;
-    };
+    });
 
-    window.addEventListener("mousemove", mouseMove);
+    function animate() {
 
-    const animate = () => {
+      ctx.clearRect(0, 0, width, height);
 
-      // fade progressif du canvas (fait disparaître les traits)
-      ctx.fillStyle = "rgba(0,0,0,0.06)";
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      points[0].x += (mouse.x - points[0].x) * 0.2;
+      points[0].y += (mouse.y - points[0].y) * 0.2;
 
-      const color = colors[Math.floor(Math.random() * colors.length)];
+      for (let i = 1; i < points.length; i++) {
+        points[i].x += (points[i - 1].x - points[i].x) * 0.2;
+        points[i].y += (points[i - 1].y - points[i].y) * 0.2;
+      }
 
       ctx.beginPath();
-      ctx.moveTo(prev.x, prev.y);
-      ctx.lineTo(mouse.x, mouse.y);
+      ctx.moveTo(points[0].x, points[0].y);
 
-      ctx.strokeStyle = color;
-      ctx.lineWidth = 4;
+      for (let i = 1; i < points.length - 2; i++) {
 
-      ctx.shadowColor = color;
-      ctx.shadowBlur = 15;
+        const xc = (points[i].x + points[i + 1].x) / 2;
+        const yc = (points[i].y + points[i + 1].y) / 2;
+
+        ctx.quadraticCurveTo(points[i].x, points[i].y, xc, yc);
+
+      }
+
+      ctx.strokeStyle = "rgba(120, 201, 255, 0.8)";
+      ctx.lineWidth = 2;
+
+      ctx.shadowBlur = 20;
+      ctx.shadowColor = "rgba(120, 201, 255, 0.8)";
 
       ctx.stroke();
 
       requestAnimationFrame(animate);
 
-    };
+    }
 
     animate();
 
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
+    window.addEventListener("resize", () => {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
+    });
 
   }, []);
 
   return (
-    <div>
+    <div className={style.container}>
 
-      <canvas ref={canvasRef} className={style.starCanvas} />
+      <canvas ref={canvasRef} className={style.canvas} />
 
       <div className={style.maindivimg}>
         <div className={style.divbgimg}>
@@ -88,8 +98,6 @@ const GamePage = (): JSX.Element => {
       </div>
 
       <h1 className={style.h1}>Game</h1>
-
-      <div className={style.container}></div>
 
     </div>
   );
