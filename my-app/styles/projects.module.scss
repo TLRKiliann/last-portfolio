@@ -14,7 +14,7 @@
   border: none;
   outline: none;
   border-radius: 20px;
-  box-shadow: 0px 0px 4px colors.$bg_color;
+  box-shadow: 0 0 4px colors.$bg_color;
   padding: 20px;
   .h2 {
     margin: auto;
@@ -45,19 +45,19 @@
     background: colors.$bg_color;
     border: 1px solid rgba(112,128,144, 0.5);
     border-radius: 10px;
-    padding: 10px 0px;
+    padding: 10px 0;
     .divlogo {
       display: flex;
       align-items: center;
       margin: 10px auto;
       background: colors.$bg_color2;
       border-radius: 20px;
-      box-shadow: 0px 0px 4px inset rgba(112,128,144, 0.75);
+      box-shadow: 0 0 4px inset rgba(112,128,144, 0.75);
       padding: 10px;
       .titlelogo {
         margin: auto 5px;
         border: none;
-        padding: 0px;
+        padding: 0;
       }
     }
   }
@@ -79,7 +79,7 @@
       padding: 10px 20px;
       &:hover {
         background: rgba(112,128,144, 0.5); 
-        box-shadow: 0 0 0px colors.$slategrey;
+        box-shadow: 0 0 0 colors.$slategrey;
         color: colors.$lightslateblue; 
       }
       &:active {
@@ -91,13 +91,13 @@
   }
   .sectionhidden {
     width: auto;
-    height: 0px;
+    height: 0;
     color: colors.$lightslateblue;
     background: colors.$bg_color;
     border: 1px solid rgba(112,128,144, 0.5);
     border-radius: 3px;    
-    margin: 20px 0px;
-    padding: 0px 20px;
+    margin: 20px 0;
+    padding: 0 20px;
     overflow-y: scroll;
     overflow: hidden;
     transition: height ease 0.7s;
@@ -128,7 +128,7 @@
     }
   }
   .section {
-    margin: 20px 0px;
+    margin: 20px 0;
     width: auto;
     height: 240px;
     color: colors.$lightslateblue;
@@ -137,7 +137,7 @@
     border-radius: 3px;    
     overflow-y: scroll;
     scroll-behavior: smooth;
-    padding: 0px 20px;
+    padding: 0 20px;
     transition: height ease 0.7s;
     &::-webkit-scrollbar {
       width: 10px;
@@ -205,7 +205,7 @@
     }
   }
   .seconddivproject {
-    margin: 40px 0px;
+    margin: 40px 0;
     display: flex;
     align-items: top;
     justify-content: space-evenly;
@@ -231,8 +231,8 @@
   }
   .parentvertical {
     position: fixed;
-    right: 0px;
-    bottom: 0px;
+    right: 0;
+    bottom: 0;
     width: 20px;
     height: 65%;
     margin: auto;
@@ -246,11 +246,11 @@
       font-family: fonts.$noto_serif;
       font-size: 18px;
       color: rgba(112,128,144, 1);
-      padding: 10px 0px;
+      padding: 10px 0;
     }
     .verticallongline {
       position: relative;
-      bottom: 0px;
+      bottom: 0;
       right: -5px;
       width: 10px;
       height: calc(100% - 18%);
@@ -266,7 +266,7 @@
   border: none;
   outline: none;
   border-radius: 20px;
-  box-shadow: 0px 0px 4px colors.$bg_color;
+  box-shadow: 0 0 4px colors.$bg_color;
   padding: 20px;
 }
 
@@ -292,8 +292,8 @@
     }
     .parentvertical {
       position: fixed;
-      right: 0px;
-      bottom: 0px;
+      right: 0;
+      bottom: 0;
       width: 20px;
       height: 70%;
       margin: auto;
@@ -307,11 +307,11 @@
         font-family: fonts.$noto_serif;
         font-size: 18px;
         color: rgba(112,128,144, 1);
-        padding: 10px 0px;
+        padding: 10px 0;
       }
       .verticallongline {
         position: relative;
-        bottom: 0px;
+        bottom: 0;
         right: -5px;
         width: 10px;
         height: calc(100% - 18%);
