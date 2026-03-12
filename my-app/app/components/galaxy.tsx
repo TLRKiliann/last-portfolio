@@ -332,10 +332,7 @@ export default function Galaxy({
   return <div ref={ctnDom}
     style={{
       width: "100%",
-      height: "100%",
-      position: "fixed",
-      top: 0,
-      right: 0,
-      left: 0
+      height: "160px",
+      position: "relative"
     }} {...rest} />;
 }
