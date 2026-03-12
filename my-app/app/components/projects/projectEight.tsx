@@ -53,8 +53,8 @@ const ProjectEight = (): JSX.Element => {
             cool qui regroupe un peu toutes les techniques qu'un web dev est censé faire preuve.
           </p>
           <p>
-            Ce site met en vente des decks, des axes et des roues pour les skaters. Le tout mis
-            en valeur par :
+            Ce site met en vente des planches, des axes et des roues pour les skaters. Le tout réalisé
+            grâce à :
           </p>
             <ul className={style.ul}>
               <li className={style.li}>Parallax - Carousel - Dropdown - Darkmode</li>
@@ -63,11 +63,12 @@ const ProjectEight = (): JSX.Element => {
               <li className={style.li}>L'utilisation des params avec les fonctions async grâce aux [folderId]</li>
               <li className={style.li}>Les appels serveur MySQL qui correspondent à l'id du produit</li>
               <li className={style.li}>La gestion authentification par API et middleware</li>
-              <li className={style.li}>Rendre les composants reutilisable au max</li>
-              <li className={style.li}>Le localStorage et les hooks...</li>
+              <li className={style.li}>Rendre les composants reutilisables un max</li>
+              <li className={style.li}>La sécurité avec TypeScript - Zod - Bcrypt</li>
+              <li className={style.li}>Le localStorage, les hooks, etc.</li>
             </ul>
           <p className={style.paragraph}>
-            Beaucoup de plaisir à faire ce site et à appliquer les diverses techniques apprises.
+            Beaucoup de plaisir à faire ce site et à appliquer les diverses techniques de NextJS.
           </p>
         </section>
       </div>
