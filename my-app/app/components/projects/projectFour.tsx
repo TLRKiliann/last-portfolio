@@ -69,7 +69,7 @@ const ProjectFour = (): JSX.Element => {
                         <li className={style.li}>Choix du nombre de joueur (2-6)</li>
                         <li className={style.li}>Choix du nombre de tour (1-5)</li>
                         <li className={style.li}>Choix du niveau (enfants ou adultes)</li>
-                        <li className={style.li}>Teste les connaissances eco-environnementales</li>
+                        <li className={style.li}>Test les connaissances eco-environnementales</li>
                     </ul>
 
                     <p className={style.paragraph}>

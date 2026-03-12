@@ -68,7 +68,7 @@ const ProjectOne = (): JSX.Element => {
             Pour ce faire j'ai utilisé :
           </p>
           <ul className={style.ul}>
-            <li className={style.li}>@tanstack</li>
+            <li className={style.li}>@tanstack (actions client)</li>
             <li className={style.li}>jsonwebtoken - bcrypt</li>
             <li className={style.li}>PostgreSQL avec Prisma</li>
             <li className={style.li}>Zustand - Zod - TypeScript</li>

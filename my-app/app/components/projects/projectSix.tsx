@@ -61,9 +61,9 @@ const ProjectSix = (): JSX.Element => {
             La réalisation de ce projet m'a appris à :
           </p>
           <ul className={style.ul}>
-            <li className={style.li}>combiner des hooks tel que useReducer avec useContext.</li>
-            <li className={style.li}>comprendre comment gérer les données avec MongoDB.</li>
-            <li className={style.li}>sécuriser un site web avec TypeScript et NextAuth.</li>
+            <li className={style.li}>Combiner des hooks tel que useReducer avec useContext.</li>
+            <li className={style.li}>Comprendre comment gérer les données avec MongoDB.</li>
+            <li className={style.li}>Sécuriser un site web avec TypeScript et NextAuth.</li>
             <li className={style.li}>utiliser Tailwind avec le darkmode.</li>
           </ul>
         </section>
