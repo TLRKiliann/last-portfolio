@@ -3,29 +3,29 @@
 import { JSX, useState } from 'react';
 import Image from 'next/image';
 import ButtonHandleCollapse from './buttonHandleCollapse';
-import { SiTailwindcss, SiMongoose } from 'react-icons/si';
+import { SiTailwindcss, SiMysql } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 import style from '@/styles/projects.module.scss';
 
-const ProjectFour = (): JSX.Element => {
+const ProjectEight = (): JSX.Element => {
 
   const [ isOpened, setIsOpened ] = useState<boolean>(false);
-  
+
   const handleCollapse = (): void => {
     setIsOpened(!isOpened);
-  }
+  };
 
   return (
     <div className={style.subdivproject}>
       <h2 className={style.h2}>
-        Site e-commerce
+        Skateboard-Shop
       </h2>
       <div className={style.divimg}>
         <Image 
-          src='/images/e-commerce.png'
-          alt="e-commerce img"
+          src='/images/skate.png'
           width={380}
           height={200}
+          alt="skate img"
           className={style.img}
         />
       </div>
@@ -35,53 +35,47 @@ const ProjectFour = (): JSX.Element => {
           <TbBrandNextjs size={24} className={style.logo} />
           <p className={style.titlelogo}>Next.js</p>
         </div>
-
         <div className={style.divlogo}>
-          <SiMongoose size={24} className={style.logo} />
-          <p className={style.titlelogo}>Mongoose</p>
+          <SiMysql size={24} className={style.logo} />
+          <p className={style.titlelogo}>MySQL</p>
         </div>
-
         <div className={style.divlogo}>
           <SiTailwindcss size={24} className={style.logo} />
           <p className={style.titlelogo}>Tailwind</p>
         </div>
       </span>
-
+      
       <ButtonHandleCollapse handleCollapse={handleCollapse} />
 
-      <div>
+      <div>           
         <section className={`${isOpened === true ? style.section : style.sectionhidden}`}>
           <p className={style.paragraph}>
-            Dans ce projet, j'ai rendu l'UX la plus professionnelle possible. 
-            
-            Rendre clair les étapes du cheminement de l'achat du produit selectionné, 
-            depuis le choix du produit jusqu'au paiment.
+            ...
+            <br />
+              ...
+            <br/>
           </p>
+            <ul className={style.ul}>
+              <li className={style.li}>la page principale</li>
+              <li className={style.li}>un formulaire pour commander des produits</li>
+              <li className={style.li}>une page pour la présentation des produits</li>
+              <li className={style.li}>une page de contact et une page pour les allergies</li>
+            </ul>
           <p className={style.paragraph}>
-            La réalisation de ce projet m'a appris à :
+            ...
           </p>
-          <ul className={style.ul}>
-            <li className={style.li}>combiner des hooks tel que useReducer avec useContext.</li>
-            <li className={style.li}>comprendre comment gérer les données avec MongoDB.</li>
-            <li className={style.li}>sécuriser un site web avec TypeScript et NextAuth.</li>
-            <li className={style.li}>utiliser Tailwind avec le darkmode.</li>
-          </ul>
         </section>
       </div>
 
       <span className={style.spanlink}>
-        <a href="https://github.com/TLRKiliann/nextjs-tailwind-mongodb" 
+        <a href="https://github.com/TLRKiliann/..."
           rel="noopener" target="_blank"
-          className={style.a}>
-          GitHub
-        </a>
-        <a href="https://www.youtube.com/watch?v=po74SHEI9HI"
+          className={style.a}>GitHub</a>
+        <a href="https://www.youtube.com/watch?v=cUJHlCAO1qo"
           rel="noopener" target="_blank"
-          className={style.a}>
-          Youtube
-        </a>
+          className={style.a}>Youtube</a>
       </span>
     </div>
   )
 };
-export default ProjectFour;
+export default ProjectEight;

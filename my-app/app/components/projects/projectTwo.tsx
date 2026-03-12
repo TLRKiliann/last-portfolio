@@ -37,13 +37,13 @@ const ProjectTwo = (): JSX.Element => {
         </div>
 
         <div className={style.divlogo}>
-          <FaSass size={24} className={style.logo} />
-          <p className={style.titlelogo}>Sass</p>
+          <SiMysql size={24} className={style.logo} />
+          <p className={style.titlelogo}>MySQL</p>
         </div>
 
         <div className={style.divlogo}>
-          <SiMysql size={24} className={style.logo} />
-          <p className={style.titlelogo}>MySQL</p>
+          <FaSass size={24} className={style.logo} />
+          <p className={style.titlelogo}>Sass</p>
         </div>
       </span>
 

@@ -5,6 +5,8 @@ import ProjectThree from './projects/projectThree';
 import ProjectFour from './projects/projectFour';
 import ProjectFive from './projects/projectFive';
 import ProjectSix from './projects/projectSix';
+import ProjectSeven from './projects/projectSeven';
+import ProjectEight from './projects/projectEight';
 import VerticalText from './projects/verticalText';
 import style from '@/styles/projects.module.scss';
 
@@ -31,7 +33,15 @@ const ProjectsSection = (): JSX.Element => {
 
         <ProjectFive />
 
+      </div>
+
+      <div className={style.seconddivproject}>
+
         <ProjectSix />
+
+        <ProjectSeven />
+
+        <ProjectEight />
 
       </div>
 

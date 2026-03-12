@@ -37,13 +37,13 @@ const ProjectOne = (): JSX.Element => {
         </div>
 
         <div className={style.divlogo}>
-          <SiTailwindcss size={24} className={style.logo} />
-          <p className={style.titlelogo}>Tailwind</p>
+          <SiPostgresql size={24} className={style.logo} />
+          <p className={style.titlelogo}>PostgreSQL</p>
         </div>
 
         <div className={style.divlogo}>
-          <SiPostgresql size={24} className={style.logo} />
-          <p className={style.titlelogo}>PostgreSQL</p>
+          <SiTailwindcss size={24} className={style.logo} />
+          <p className={style.titlelogo}>Tailwind</p>
         </div>
       </span>
 
