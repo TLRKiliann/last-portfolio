@@ -1,3 +1,5 @@
+"use client";
+
 import { JSX } from 'react';
 import Image  from 'next/image';
 import Layout from "./components/layout";
@@ -5,6 +7,7 @@ import MainTitle from './components/mainTitle';
 import SkillsSection from './components/skillsSection';
 import ProjectsSection from './components/projectsSection';
 import Footer from './components/footer';
+import Galaxy from './components/galaxy';
 import style from '@/styles/page.module.scss';
 
 const Page = (): JSX.Element => {
@@ -14,8 +17,8 @@ const Page = (): JSX.Element => {
         <div className={style.divbgimg}>
           <Image 
             src='/images/green_path.jpg'
-            width="500"
-            height="500"
+            width={500}
+            height={500}
             loading="eager"
             className={style.bg_img} 
             alt="image bg"
@@ -46,6 +49,24 @@ const Page = (): JSX.Element => {
       </Layout>
 
       <Footer />
+
+      <div className={style.galaxy}>
+        <Galaxy 
+          mouseRepulsion
+          mouseInteraction
+          density={1}
+          glowIntensity={0.3}
+          saturation={0}
+          hueShift={140}
+          twinkleIntensity={0.3}
+          rotationSpeed={0.1}
+          repulsionStrength={2}
+          autoCenterRepulsion={0}
+          starSpeed={0.5}
+          speed={1}
+        />
+      </div>
+
     </>
   )
 };
