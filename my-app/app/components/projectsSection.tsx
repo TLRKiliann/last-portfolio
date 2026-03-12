@@ -35,7 +35,7 @@ const ProjectsSection = (): JSX.Element => {
 
       </div>
 
-      <div className={style.seconddivproject}>
+      <div className={style.divproject}>
 
         <ProjectSix />
 

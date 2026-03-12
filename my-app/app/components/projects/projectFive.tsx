@@ -18,7 +18,7 @@ const ProjectFive = (): JSX.Element => {
   return (
     <div className={style.subdivproject}>
       <h2 className={style.h2}>
-        App de soins infirmiers
+        Web App (soins infirmiers)
       </h2>
       <div className={style.divimg}>
         <Image 
@@ -32,13 +32,12 @@ const ProjectFive = (): JSX.Element => {
 
       <span className={style.spanlogo}>
         <div className={style.divlogo}>
-          <FaPython size={24} className={style.logo} />
+          <FaPython size={20} className={style.logo} />
           <p className={style.titlelogo}>Python3-Tkinter</p>
         </div>
 
         <div className={style.divlogo}>
-          <SiMysql size={24} className={style.logo} />
-          <p className={style.titlelogo}>MySQL</p>
+          <SiMysql size={36} className={style.MySQLlogo} />          
         </div>
       </span>
 

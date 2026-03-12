@@ -3,92 +3,85 @@
 import { JSX, useState } from 'react';
 import Image from 'next/image';
 import ButtonHandleCollapse from './buttonHandleCollapse';
-import { SiVitest } from 'react-icons/si';
-import { BiLogoTypescript } from "react-icons/bi";
-
+import { SiTailwindcss, SiMongoose } from 'react-icons/si';
+import { TbBrandNextjs } from 'react-icons/tb';
 import style from '@/styles/projects.module.scss';
 
 const ProjectSix = (): JSX.Element => {
 
-    const [ isOpened, setIsOpened ] = useState<boolean>(false);
+  const [ isOpened, setIsOpened ] = useState<boolean>(false);
+  
+  const handleCollapse = (): void => {
+    setIsOpened(!isOpened);
+  }
 
-    const handleCollapse = (): void => {
-        setIsOpened(!isOpened);
-    };
-
-    return (
-        <div className={style.subdivproject}>
-            <h2 className={style.h2}>
-                Game pour Mon Eco Pote
-            </h2>
-            <div className={style.divimg}>
-                <Image 
-                    src='/images/game.png'
-                    width={380}
-                    height={200}
-                    alt="game ecopote img"
-                    className={style.img}
-                />
-            </div>
-
-            <span className={style.spanlogo}>
-                <div className={style.divlogo}>
-                    <SiVitest size={24} className={style.logo} />
-                    <p className={style.titlelogo}>Vite.js</p>
-                </div>
-
-                <div className={style.divlogo}>
-                    <BiLogoTypescript size={24} className={style.logo} />
-                    <p className={style.titlelogo}>TypeScript</p>
-                </div>
-            </span>
-
-            <ButtonHandleCollapse handleCollapse={handleCollapse} />
-
-            <div>          
-                <section className={`${isOpened === true ? style.section : style.sectionhidden}`}>
-                    <p className={style.paragraph}>
-                        J'ai travaillé comme bénévole pour Mon Eco Pote. Ils m'ont demandé de leur 
-                        faire un jeu. Alors, je me suis mis au travail et je l'ai fait seul. Je ne 
-                        savais pas si au départ cela allait être réalisable, mais finalement le résultat
-                        est concluant. 
-                    </p>
-
-                    <p className={style.paragraph}>
-                        Bien évidemment, ce jeu n'est praticable que sur desktop, car la version mobile
-                        pose trop de problème en terme de dimension des cases, etc.
-                    </p>
-
-                    <ul className={style.ul}>
-                        <li className={style.li}>Traduit en 4 langues</li>
-                        <li className={style.li}>Choix du nombre de joueur (2-6)</li>
-                        <li className={style.li}>Choix du nombre de tour (1-5)</li>
-                        <li className={style.li}>Choix du niveau (enfants ou adultes)</li>
-                        <li className={style.li}>Teste les connaissances eco-environnementales</li>
-                    </ul>
-
-                    <p className={style.paragraph}>
-                        Venez jouer ! Ça vaut le détour !!!
-                    </p>
-
-                </section>
-            </div>
-
-            <span className={style.spanlink}>
-                <a href="https://github.com/TLRKiliann/mono-game" 
-                    rel="noopener" target="_blank"
-                    className={style.a}
-                >
-                    GitHub
-                </a>
-                <a href="https://mono-game-beta.vercel.app/"
-                    rel="noopener" target="_blank"
-                    className={style.a}
-                >
-                    Vercel
-                </a>
-            </span>
+  return (
+    <div className={style.subdivproject}>
+      <h2 className={style.h2}>
+        Clothing store
+      </h2>
+      <div className={style.divimg}>
+        <Image 
+          src='/images/e-commerce.png'
+          alt="e-commerce img"
+          width={380}
+          height={200}
+          className={style.img}
+        />
+      </div>
+      
+      <span className={style.spanlogo}>
+        <div className={style.divlogo}>
+          <TbBrandNextjs size={24} className={style.logo} />
+          <p className={style.titlelogo}>Next.js</p>
         </div>
-    )
+
+        <div className={style.divlogo}>
+          <SiMongoose size={24} className={style.logo} />
+          <p className={style.titlelogo}>Mongoose</p>
+        </div>
+
+        <div className={style.divlogo}>
+          <SiTailwindcss size={24} className={style.logo} />
+          <p className={style.titlelogo}>Tailwind</p>
+        </div>
+      </span>
+
+      <ButtonHandleCollapse handleCollapse={handleCollapse} />
+
+      <div>
+        <section className={`${isOpened === true ? style.section : style.sectionhidden}`}>
+          <p className={style.paragraph}>
+            Dans ce projet, j'ai rendu l'UX la plus professionnelle possible. 
+            
+            Rendre clair les étapes du cheminement de l'achat du produit selectionné, 
+            depuis le choix du produit jusqu'au paiment.
+          </p>
+          <p className={style.paragraph}>
+            La réalisation de ce projet m'a appris à :
+          </p>
+          <ul className={style.ul}>
+            <li className={style.li}>combiner des hooks tel que useReducer avec useContext.</li>
+            <li className={style.li}>comprendre comment gérer les données avec MongoDB.</li>
+            <li className={style.li}>sécuriser un site web avec TypeScript et NextAuth.</li>
+            <li className={style.li}>utiliser Tailwind avec le darkmode.</li>
+          </ul>
+        </section>
+      </div>
+
+      <span className={style.spanlink}>
+        <a href="https://github.com/TLRKiliann/nextjs-tailwind-mongodb" 
+          rel="noopener" target="_blank"
+          className={style.a}>
+          GitHub
+        </a>
+        <a href="https://www.youtube.com/watch?v=po74SHEI9HI"
+          rel="noopener" target="_blank"
+          className={style.a}>
+          Youtube
+        </a>
+      </span>
+    </div>
+  )
 };
 export default ProjectSix;

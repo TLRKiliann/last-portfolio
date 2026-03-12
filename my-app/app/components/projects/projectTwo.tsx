@@ -18,7 +18,7 @@ const ProjectTwo = (): JSX.Element => {
   return (
     <div className={style.subdivproject}>
       <h2 className={style.h2}>
-        Rendez-vous géolocalisables
+        Géo rendez-vous
       </h2>
       <div className={style.divimg}>
         <Image 
@@ -37,8 +37,7 @@ const ProjectTwo = (): JSX.Element => {
         </div>
 
         <div className={style.divlogo}>
-          <SiMysql size={24} className={style.logo} />
-          <p className={style.titlelogo}>MySQL</p>
+          <SiMysql size={36} className={style.MySQLlogo} />
         </div>
 
         <div className={style.divlogo}>

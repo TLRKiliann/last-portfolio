@@ -36,8 +36,7 @@ const ProjectEight = (): JSX.Element => {
           <p className={style.titlelogo}>Next.js</p>
         </div>
         <div className={style.divlogo}>
-          <SiMysql size={24} className={style.logo} />
-          <p className={style.titlelogo}>MySQL</p>
+          <SiMysql size={36} className={style.MySQLlogo} />
         </div>
         <div className={style.divlogo}>
           <SiTailwindcss size={24} className={style.logo} />

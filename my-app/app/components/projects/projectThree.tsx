@@ -3,8 +3,10 @@
 import { JSX, useState } from 'react';
 import Image from 'next/image';
 import ButtonHandleCollapse from './buttonHandleCollapse';
-import { FaSass } from 'react-icons/fa';
-import { SiVitest } from 'react-icons/si';
+import { FaPhp } from "react-icons/fa6";
+import { FaSquareJs } from "react-icons/fa6";
+import { SiMysql } from 'react-icons/si';
+import { IoLogoCss3 } from "react-icons/io";
 import style from '@/styles/projects.module.scss';
 
 const ProjectThree = (): JSX.Element => {
@@ -18,26 +20,36 @@ const ProjectThree = (): JSX.Element => {
   return (
     <div className={style.subdivproject}>
       <h2 className={style.h2}>
-        Site vitrine
+        Statistics (native code)
       </h2>
       <div className={style.divimg}>
         <Image 
-          src='/images/boulangerie.png'
+          src='/images/stats.png'
           width={380}
           height={200}
-          alt="boulangerie img"
+          alt="stats img"
           className={style.img}
         />
       </div>
       
       <span className={style.spanlogo}>
         <div className={style.divlogo}>
-          <SiVitest size={24} className={style.logo} />
-          <p className={style.titlelogo}>Vite.js</p>
+          <FaPhp size={34} className={style.phplogo} />
+          {/* <p className={style.titlelogo}>PHP</p> */}
         </div>
+
         <div className={style.divlogo}>
-          <FaSass size={24} className={style.logo} />
-          <p className={style.titlelogo}>Sass</p>
+          <FaSquareJs size={24} className={style.jslogo} />
+          {/* <p className={style.titlelogo}>JS</p> */}
+        </div>
+
+        <div className={style.divlogo}>
+          <SiMysql size={36} className={style.MySQLlogo} />
+        </div>
+
+        <div className={style.divlogo}>
+          <IoLogoCss3 size={24} className={style.csslogo} />
+          {/* <p className={style.titlelogo}>CSS</p> */}
         </div>
       </span>
       
@@ -46,10 +58,9 @@ const ProjectThree = (): JSX.Element => {
       <div>           
         <section className={`${isOpened === true ? style.section : style.sectionhidden}`}>
           <p className={style.paragraph}>
-            J'ai fait ce site de boulangerie, pour m'entraîner au code css, html, 
-            et à la manipulation des images.
+            ...
             <br />
-              Ce site comprend :
+              ...
             <br/>
           </p>
             <ul className={style.ul}>
@@ -59,18 +70,16 @@ const ProjectThree = (): JSX.Element => {
               <li className={style.li}>une page de contact et une page pour les allergies</li>
             </ul>
           <p className={style.paragraph}>
-            Bien que le design présente bien et que la cohérence du site soit 
-            respectée, je le trouve, dans sa vue d'ensemble, un peu old-school.
-            En même temps, c'est l'un de mes plus vieux sites.
+            ...
           </p>
         </section>
       </div>
 
       <span className={style.spanlink}>
-        <a href="https://github.com/TLRKiliann/vite-et-bien"
+        <a href="https://github.com/TLRKiliann/..."
           rel="noopener" target="_blank"
           className={style.a}>GitHub</a>
-        <a href="https://www.youtube.com/watch?v=8g789tQ2gyY"
+        <a href="https://www.youtube.com/watch?v=C30dF36LaZs"
           rel="noopener" target="_blank"
           className={style.a}>Youtube</a>
       </span>

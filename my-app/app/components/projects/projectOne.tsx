@@ -18,7 +18,7 @@ const ProjectOne = (): JSX.Element => {
   return (
     <div className={style.subdivproject}>
       <h2 className={style.h2}>
-        Dashboard
+        Dashboard security
       </h2>
       <div className={style.divimg}>
         <Image 
