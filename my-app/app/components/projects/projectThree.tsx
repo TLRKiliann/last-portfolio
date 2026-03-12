@@ -58,27 +58,45 @@ const ProjectThree = (): JSX.Element => {
       <div>           
         <section className={`${isOpened === true ? style.section : style.sectionhidden}`}>
           <p className={style.paragraph}>
-            ...
-            <br />
-              ...
-            <br/>
+            La partie statistique d'une application web m'a été confié par IT4net.
+            Cette expérience m'a permis de collaborer avec des web développeurs, 
+            durant 3 mois.
           </p>
-            <ul className={style.ul}>
-              <li className={style.li}>la page principale</li>
-              <li className={style.li}>un formulaire pour commander des produits</li>
-              <li className={style.li}>une page pour la présentation des produits</li>
-              <li className={style.li}>une page de contact et une page pour les allergies</li>
-            </ul>
+
+          <ul className={style.ul}>
+            <li className={style.li}>2 ingénieurs backend dev</li>
+            <li className={style.li}>2 web frontend dev</li>
+            <li className={style.li}>1 web designer</li>
+          </ul>
+
+          <p>
+            Les languages de programmation utilisés :
+          </p>
+
+          <ul className={style.ul}>
+            <li className={style.li}>PHP</li>
+            <li className={style.li}>JavaScript</li>
+            <li className={style.li}>MySQL</li>
+            <li className={style.li}>CSS</li>
+          </ul>
+
           <p className={style.paragraph}>
-            ...
+            J'ai utilsé le PHP orienté objet pour récupérer les données depuis la data base MySQL
+            et les faire passer dans du JavaScript afin de m'en servir pour faire des graphiques
+            sur le nombre d'intervention effectué par mois et par année, par l'intendance
+            d'IT4net. Je me suis servi de ChartJS et du CSS pour le rendu graphique.  
+          </p>
+
+          <p className={style.paragraph}>
+            À l'issue de cette mission, j'ai atteint tous les objectifs qui avaient été fixés.
           </p>
         </section>
       </div>
 
       <span className={style.spanlink}>
-        <a href="https://github.com/TLRKiliann/..."
+        {/* <a href="https://github.com/TLRKiliann/..."
           rel="noopener" target="_blank"
-          className={style.a}>GitHub</a>
+          className={style.a}>GitHub</a> */}
         <a href="https://www.youtube.com/watch?v=C30dF36LaZs"
           rel="noopener" target="_blank"
           className={style.a}>Youtube</a>

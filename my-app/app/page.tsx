@@ -66,7 +66,6 @@ const Page = (): JSX.Element => {
       </Layout>
 
       <Footer />
-
     </>
   )
 };
