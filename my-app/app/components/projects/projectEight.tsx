@@ -49,25 +49,31 @@ const ProjectEight = (): JSX.Element => {
       <div>           
         <section className={`${isOpened === true ? style.section : style.sectionhidden}`}>
           <p className={style.paragraph}>
-            ...
-            <br />
-              ...
-            <br/>
+            Ma motivation à faire ce site web, se traduit par l'envie de réaliser un site
+            cool qui regroupe un peu toutes les techniques qu'un web dev est censé faire preuve.
+          </p>
+          <p>
+            Ce site met en vente des decks, des axes et des roues pour les skaters. Le tout mis
+            en valeur par :
           </p>
             <ul className={style.ul}>
-              <li className={style.li}>la page principale</li>
-              <li className={style.li}>un formulaire pour commander des produits</li>
-              <li className={style.li}>une page pour la présentation des produits</li>
-              <li className={style.li}>une page de contact et une page pour les allergies</li>
+              <li className={style.li}>Parallax - Carousel - Dropdown - Darkmode</li>
+              <li className={style.li}>Une searchbar qui dirige vers l'url en fonction du produit recherché</li>
+              <li className={style.li}>La gestion des erreurs par les fichiers: error.tsx - loading.tsx - not-found.tsx</li>
+              <li className={style.li}>L'utilisation des params avec les fonctions async grâce aux [folderId]</li>
+              <li className={style.li}>Les appels serveur MySQL qui correspondent à l'id du produit</li>
+              <li className={style.li}>La gestion authentification par API et middleware</li>
+              <li className={style.li}>Rendre les composants reutilisable au max</li>
+              <li className={style.li}>Le localStorage et les hooks...</li>
             </ul>
           <p className={style.paragraph}>
-            ...
+            Beaucoup de plaisir à faire ce site et à appliquer les diverses techniques apprises.
           </p>
         </section>
       </div>
 
       <span className={style.spanlink}>
-        <a href="https://github.com/TLRKiliann/..."
+        <a href="https://github.com/TLRKiliann/nextjs14-vishwas"
           rel="noopener" target="_blank"
           className={style.a}>GitHub</a>
         <a href="https://www.youtube.com/watch?v=cUJHlCAO1qo"
