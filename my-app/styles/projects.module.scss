@@ -214,6 +214,25 @@
       }
     }
   }
+  .spanlinkstats {
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: none;
+    .a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: colors.$middleslateblue;
+      &:hover {
+        cursor: pointer;
+        color: colors.$deepskyblue;
+      }
+      &:active {
+        color: colors.$whitesmoke;
+      }
+    }
+  }
 }
 
 .project {
@@ -241,22 +260,6 @@
     justify-content: space-around;
     .subdivproject {
       @include container-project();
-    }
-    .spanlinkaxis {
-      margin-left: 20px;
-      color: colors.$dodgerblue;
-      .a {
-        text-decoration: none;
-        font-size: 1.2rem;
-        color: colors.$middleslateblue;
-        &:hover {
-          cursor: pointer;
-          color: colors.$deepskyblue;
-        }
-        &:active {
-          color: colors.$whitesmoke;
-        }
-      }
     }
   }
   .parentvertical {

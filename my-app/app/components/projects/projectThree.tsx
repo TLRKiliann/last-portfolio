@@ -93,7 +93,7 @@ const ProjectThree = (): JSX.Element => {
         </section>
       </div>
 
-      <span className={style.spanlink}>
+      <span className={style.spanlinkstats}>
         {/* <a href="https://github.com/TLRKiliann/..."
           rel="noopener" target="_blank"
           className={style.a}>GitHub</a> */}
