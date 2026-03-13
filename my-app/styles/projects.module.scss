@@ -325,10 +325,10 @@
     }
     .parentvertical {
       position: fixed;
-      right: 0;
+      right: 17px;
       bottom: 0;
-      width: 20px;
-      height: 70%;
+      width: 17px;
+      height: 60%;
       margin: auto;
       display: flex;
       flex-direction: column;
@@ -338,9 +338,11 @@
         writing-mode: vertical-rl;
         text-orientation: mixed;
         font-family: fonts.$noto_serif;
-        font-size: 18px;
+        font-size: 16px;
         color: rgba(112,128,144, 1);
-        padding: 10px 0;
+        padding: 0;
+        padding-bottom: 10px;
+        padding-top: 30px;
       }
       .verticallongline {
         position: relative;

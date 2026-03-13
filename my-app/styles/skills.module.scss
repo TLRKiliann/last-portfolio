@@ -36,6 +36,7 @@
       .spanskills {
         margin: auto;
         display: flex;
+        align-items: baseline;
         flex-direction: column;
         li {
           margin: 5px 0;
@@ -59,7 +60,6 @@
       align-items: center;
       .subdivskills {
         margin-top: 40px;
-
       }
     } 
   }

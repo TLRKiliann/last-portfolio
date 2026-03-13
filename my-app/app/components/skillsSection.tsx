@@ -96,7 +96,7 @@ const SkillsSection = (): JSX.Element => {
           <span className={style.spanskills}>
             <li>
               <FaGithub size={32} className={style.logo} style={{color: "#fff"}} />
-              Git & GitHub
+              GitHub
             </li>
             <li>
               <FaPython size={32} className={style.logo} style={{color: "#228b22"}} />

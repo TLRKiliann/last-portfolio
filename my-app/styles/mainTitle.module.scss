@@ -50,7 +50,7 @@
       margin: auto;
       text-align: justify;
       font-family: fonts.$noto_serif;
-      font-size: 1.8rem;
+      font-size: 2rem;
       @include text-color(rgba(141, 154, 166, 0.9), rgba(112,128,144, 0.75));
       filter: contrast(200%);
     }
@@ -165,7 +165,7 @@
         z-index: -1;
       }
       .h3 {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
       }
       .h1 {
         font-size: 1.5rem;
