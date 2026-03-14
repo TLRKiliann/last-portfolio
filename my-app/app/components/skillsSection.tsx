@@ -76,7 +76,7 @@ const SkillsSection = (): JSX.Element => {
           <h2 className={style.h2}>Backend</h2>
           <span className={style.spanskills}>
             <li>
-              <SiMysql size={32} className={style.logo} style={{color: "cyan"}} />
+              <SiMysql size={40} className={style.logo} style={{color: "cyan"}} />
               MySQL
             </li>
             <li>

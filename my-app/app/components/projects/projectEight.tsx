@@ -32,7 +32,7 @@ const ProjectEight = (): JSX.Element => {
       
       <span className={style.spanlogo}>
         <div className={style.divlogo}>
-          <TbBrandNextjs size={24} className={style.logo} />
+          <TbBrandNextjs size={26} className={style.logo} />
           <p className={style.titlelogo}>Next.js</p>
         </div>
         <div className={style.divlogo}>
@@ -52,7 +52,7 @@ const ProjectEight = (): JSX.Element => {
             Ma motivation à faire ce site web, se traduit par l'envie de réaliser un site
             cool qui regroupe un peu toutes les techniques qu'un web dev est censé faire preuve.
           </p>
-          <p>
+          <p className={style.paragraph}>
             Ce site met en vente des planches, des axes et des roues pour les skaters. Le tout réalisé
             grâce à :
           </p>

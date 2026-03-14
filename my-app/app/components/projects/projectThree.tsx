@@ -39,7 +39,7 @@ const ProjectThree = (): JSX.Element => {
         </div>
 
         <div className={style.divlogo}>
-          <FaSquareJs size={24} className={style.jslogo} />
+          <FaSquareJs size={26} className={style.jslogo} />
           {/* <p className={style.titlelogo}>JS</p> */}
         </div>
 
@@ -48,7 +48,7 @@ const ProjectThree = (): JSX.Element => {
         </div>
 
         <div className={style.divlogo}>
-          <IoLogoCss3 size={24} className={style.csslogo} />
+          <IoLogoCss3 size={26} className={style.csslogo} />
           {/* <p className={style.titlelogo}>CSS</p> */}
         </div>
       </span>

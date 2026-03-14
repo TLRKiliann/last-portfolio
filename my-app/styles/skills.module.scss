@@ -54,12 +54,20 @@
 
 @media screen and (max-width: 900px) {
   .skills {
+    .header {
+      display: flex;
+      justify-content: center;
+    }
     .divskills {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 0;
       .subdivskills {
         margin-top: 40px;
+        .h2 {
+          text-align: center;
+        }
       }
     } 
   }

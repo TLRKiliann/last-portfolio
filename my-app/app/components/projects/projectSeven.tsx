@@ -36,7 +36,7 @@ const ProjectSeven = (): JSX.Element => {
           <p className={style.titlelogo}>Vite.js</p>
         </div>
         <div className={style.divlogo}>
-          <FaSass size={24} className={style.logo} />
+          <FaSass size={26} className={style.logo} />
           <p className={style.titlelogo}>Sass</p>
         </div>
       </span>

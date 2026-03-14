@@ -38,12 +38,12 @@ const ProjectFour = (): JSX.Element => {
                 </div>
 
                 <div className={style.divlogo}>
-                    <BiLogoTypescript size={24} className={style.logo} />
+                    <BiLogoTypescript size={28} className={style.logo} />
                     <p className={style.titlelogo}>TypeScript</p>
                 </div>
 
                 <div className={style.divlogo}>
-                    <IoLogoCss3 size={24} className={style.csslogo} />
+                    <IoLogoCss3 size={26} className={style.csslogo} />
                     {/* <p className={style.titlelogo}>CSS</p> */}
                 </div>
             </span>

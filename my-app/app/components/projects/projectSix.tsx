@@ -32,7 +32,7 @@ const ProjectSix = (): JSX.Element => {
       
       <span className={style.spanlogo}>
         <div className={style.divlogo}>
-          <TbBrandNextjs size={24} className={style.logo} />
+          <TbBrandNextjs size={26} className={style.logo} />
           <p className={style.titlelogo}>Next.js</p>
         </div>
 
