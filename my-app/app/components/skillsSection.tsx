@@ -32,7 +32,7 @@ const SkillsSection = (): JSX.Element => {
             </li>
             <li>
               <SiGimp size={32} className={style.logo} 
-                style={{color: "#9f6934", background: "#ccc", borderRadius: "100%"}} />
+                style={{color: "#9f6934", background: "#cccccc", borderRadius: "100%"}} />
               Gimp
             </li>
           </span>
@@ -47,11 +47,11 @@ const SkillsSection = (): JSX.Element => {
             </li>
             <li>
               <SiTypescript size={32} className={style.logo} 
-                style={{color: "steelblue", background: "#ccc", borderRadius: "5px"}} />
+                style={{color: "steelblue", background: "#cccccc", borderRadius: "5px"}} />
               TypeScript
             </li>
             <li>
-              <TbBrandNextjs size={32} className={style.logo} style={{color: "#fff"}} />
+              <TbBrandNextjs size={32} className={style.logo} style={{color: "#ffffff"}} />
               Next.js
               </li>
             <li>
@@ -66,7 +66,7 @@ const SkillsSection = (): JSX.Element => {
             </li>
             <li>
               <FaWordpress size={32} className={style.logo}
-                style={{color: "dodgerblue", background: "#ccc", borderRadius: "100%"}} />
+                style={{color: "dodgerblue", background: "#cccccc", borderRadius: "100%"}} />
               Wordpress
             </li>
           </span>
@@ -80,12 +80,12 @@ const SkillsSection = (): JSX.Element => {
               MySQL
             </li>
             <li>
-              <SiMongoose size={32} className={style.logo} style={{color: "brown"}} />
+              <SiMongoose size={32} className={style.logo} style={{color: "orangered"}} />
               Mongoose
             </li>
             <li>
               <FaUbuntu size={32} className={style.logo}
-                style={{color: "orangered", background: "#ccc", borderRadius: "100%"}} />
+                style={{color: "orangered", background: "#cccccc", borderRadius: "100%"}} />
               Lamp
             </li>
           </span>
@@ -95,11 +95,11 @@ const SkillsSection = (): JSX.Element => {
           <h2 className={style.h2}>Other</h2>
           <span className={style.spanskills}>
             <li>
-              <FaGithub size={32} className={style.logo} style={{color: "#fff"}} />
+              <FaGithub size={32} className={style.logo} style={{marginTop: -5, color: "#ffffff"}} />
               GitHub
             </li>
             <li>
-              <FaPython size={32} className={style.logo} style={{color: "#228b22"}} />
+              <FaPython size={32} className={style.logo} style={{color: "springgreen"}} />
               Python 3
             </li>
             <li>

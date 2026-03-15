@@ -3,7 +3,6 @@
 import { JSX, useState } from 'react';
 import Image from 'next/image';
 import ButtonHandleCollapse from './buttonHandleCollapse';
-import { SiVitest } from 'react-icons/si';
 import { BiLogoTypescript } from "react-icons/bi";
 import { IoLogoCss3 } from "react-icons/io";
 import style from '@/styles/projects.module.scss';
@@ -33,12 +32,18 @@ const ProjectFour = (): JSX.Element => {
 
             <span className={style.spanlogo}>
                 <div className={style.divlogo}>
-                    <SiVitest size={24} className={style.logo} />
+                    <Image 
+                        src="/images/vitejs.png"
+                        width={33}
+                        height={29}
+                        alt="vitjs logo"
+                        className={style.logo}
+                    />
                     <p className={style.titlelogo}>Vite.js</p>
                 </div>
 
                 <div className={style.divlogo}>
-                    <BiLogoTypescript size={28} className={style.logo} />
+                    <BiLogoTypescript size={28} className={style.tslogo} />
                     <p className={style.titlelogo}>TypeScript</p>
                 </div>
 

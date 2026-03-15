@@ -57,19 +57,58 @@
       box-shadow: 0 0 4px inset rgba(112,128,144, 0.75);
       padding: 0;
       .MySQLlogo {
+        color: colors.$aqua;
         margin: 5px 15px;
         padding: 0;
       }
       .phplogo {
-        margin: 5px 15px;
-        padding: 0;
+        background-color: colors.$darkorchid;
+        color: colors.$whitesmoke;
+        border-radius: 50%;
+        margin: 5px;
+        padding: 0 10px;
       }
       .jslogo {
+        color: colors.$yellow;
         margin: 10px 15px;
         padding: 0;
       }
       .csslogo {
+        color: colors.$dodgerblue;
         margin: 12px 15px;
+        padding: 0;
+      }
+      .sasslogo {
+        color: colors.$hotpink;
+        margin: 10px;
+        padding: 0;
+      }
+      .tailwindlogo {
+        color: colors.$deepskyblue;
+        margin: 10px;
+        padding: 0;
+      }
+      .tslogo {
+        background-color: colors.$whitesmoke;
+        color: colors.$steelblue;
+        border-radius: 25%;
+        margin: 10px;
+        padding: 0;
+      }
+      .mangooslogo {
+        color: colors.$orangered;
+        margin: 10px;
+        padding: 0;
+      }
+      .postgrelogo {
+        background-color: colors.$royalblue;
+        border-radius: 25%;
+        margin: 7px;
+        padding: 5px;
+      }
+      .pythonlogo {
+        color: colors.$springgreen;
+        margin: 10px;
         padding: 0;
       }
       .logo {

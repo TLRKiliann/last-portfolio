@@ -39,7 +39,7 @@ const ProjectEight = (): JSX.Element => {
           <SiMysql size={36} className={style.MySQLlogo} />
         </div>
         <div className={style.divlogo}>
-          <SiTailwindcss size={24} className={style.logo} />
+          <SiTailwindcss size={24} className={style.tailwindlogo} />
           <p className={style.titlelogo}>Tailwind</p>
         </div>
       </span>

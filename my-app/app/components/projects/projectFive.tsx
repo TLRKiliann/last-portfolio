@@ -32,7 +32,7 @@ const ProjectFive = (): JSX.Element => {
 
       <span className={style.spanlogo}>
         <div className={style.divlogo}>
-          <FaPython size={24} className={style.logo} />
+          <FaPython size={24} className={style.pythonlogo} />
           <p className={style.titlelogo}>Python3-Tkinter</p>
         </div>
 

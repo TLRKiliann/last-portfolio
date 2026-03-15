@@ -37,12 +37,12 @@ const ProjectSix = (): JSX.Element => {
         </div>
 
         <div className={style.divlogo}>
-          <SiMongoose size={24} className={style.logo} />
+          <SiMongoose size={24} className={style.mangooslogo} />
           <p className={style.titlelogo}>Mongoose</p>
         </div>
 
         <div className={style.divlogo}>
-          <SiTailwindcss size={24} className={style.logo} />
+          <SiTailwindcss size={24} className={style.tailwindlogo} />
           <p className={style.titlelogo}>Tailwind</p>
         </div>
       </span>

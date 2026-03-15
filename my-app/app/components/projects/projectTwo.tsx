@@ -4,7 +4,7 @@ import { JSX, useState } from 'react';
 import Image from 'next/image';
 import ButtonHandleCollapse from './buttonHandleCollapse';
 import { FaSass } from 'react-icons/fa';
-import { SiMysql, SiVitest } from 'react-icons/si';
+import { SiMysql } from 'react-icons/si';
 import style from '@/styles/projects.module.scss';
 
 const ProjectTwo = (): JSX.Element => {
@@ -32,7 +32,13 @@ const ProjectTwo = (): JSX.Element => {
       
       <span className={style.spanlogo}>
         <div className={style.divlogo}>
-          <SiVitest size={24} className={style.logo} />
+          <Image 
+              src="/images/vitejs.png"
+              width={33}
+              height={29}
+              alt="vitjs logo"
+              className={style.logo}
+          />
           <p className={style.titlelogo}>Vite.js</p>
         </div>
 
@@ -41,7 +47,7 @@ const ProjectTwo = (): JSX.Element => {
         </div>
 
         <div className={style.divlogo}>
-          <FaSass size={26} className={style.logo} />
+          <FaSass size={28} className={style.sasslogo} />
           <p className={style.titlelogo}>Sass</p>
         </div>
       </span>
